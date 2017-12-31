@@ -1,0 +1,83 @@
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("../page-dark.png");
+}
+
+#header {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("http://vunature.com/wp-content/uploads/2016/11/nature-stars-galaxy-night-fog-landscape-mountain-view-images-1920x1080.jpg");
+  background-size: 100% 100%;
+}
+
+#info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  font-size: 32px;
+  color: lightblue;
+}
+
+#ip {
+  font-size: 18px;
+  color: lightblue;
+}
+
+
+#ip:after {
+  content: '|';
+}
+
+
+#logo img {
+  width: 256px;
+  height: 256px;
+}
+
+#navbar {
+  width: 100%;
+  position: absolute;
+  background: purple;
+  height: 60px;
+  bottom: 0px;
+  box-shadow: 0px 8px 20px -2px black;
+}
+
+#navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+#navbar li {
+  display: inline-block;
+  line-height: 60px;
+  -webkit-transition: background-color 100ms linear;
+  -moz-transition: background-color 100ms linear;
+  -o-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+}
+
+#navbar li a {
+  display: block;
+  font-size: 24px;
+    padding: 0 30px;
+  color: white;
+  text-decoration: none;
+}
+
+#navbar li:hover {
+  background-color: gray;
+}
